@@ -79,28 +79,28 @@ jobs:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: echo 'deploy sit1'
+      - run: echo 'deploy sit3'
 
 
   deploy-site4:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: echo 'deploy sit2'
+      - run: echo 'deploy sit4'
 
 
  deploy-site5:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: echo 'deploy sit1'
+      - run: echo 'deploy sit5'
 
 
   deploy-site6:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: echo 'deploy sit2'
+      - run: echo 'deploy sit6'
       
 
 
@@ -108,14 +108,14 @@ jobs:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: xecho 'deploy sit1'
+      - run: xecho 'deploy sit7'
 
 
   deploy-site8:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
-      - run: echo 'deploy sit2'
+      - run: echo 'deploy sit8'
       
       
 workflows:
