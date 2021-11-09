@@ -214,9 +214,9 @@ workflows:
       - deploy-site8:
           requires:
             - approval-deploy
-           filters:
-             branches:
-               only: master
+          filters:
+            branches:
+              only: master
              
       - deploy-site9:
          requires:
