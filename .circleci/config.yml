@@ -232,17 +232,17 @@ workflows:
            branches:
              only: master
               
-       - deploy-site11:
+      - deploy-site11:
          requires:
             - approval-deploy
          filters:
            branches:
              only: master
        
-       - deploy-site12:
-          requires:
-             - approval-deploy
-          filters:
-            branches:
-              only: master  
+      - deploy-site12:
+         requires:
+            - approval-deploy
+         filters:
+           branches:
+             only: master  
 #testrestwetes
