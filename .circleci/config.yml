@@ -117,6 +117,33 @@ jobs:
     steps:
       - run: echo 'deploy sit8'
       
+   
+  deploy-site9:
+    docker:
+      - image: circleci/openjdk:8-jdk 
+    steps:
+      - run: echo 'deploy sit9'
+
+
+  deploy-site10:
+    docker:
+      - image: circleci/openjdk:8-jdk 
+    steps:
+      - run: xecho 'deploy sit10'
+      
+ 
+  deploy-site11:
+    docker:
+      - image: circleci/openjdk:8-jdk 
+    steps:
+      - run: echo 'deploy sit11'
+
+
+  deploy-site12:
+    docker:
+      - image: circleci/openjdk:8-jdk 
+    steps:
+      - run: echo 'deploy sit12'
       
 workflows:
   version: 2
@@ -186,6 +213,34 @@ workflows:
               only: master
 
       - deploy-site8:
+          requires:
+            - approval-deploy
+          filters:
+            branches:
+              only: master
+             
+       - deploy-site9:
+          requires:
+            - approval-deploy
+          filters:
+            branches:
+              only: master
+       
+      - deploy-site10:
+          requires:
+            - approval-deploy
+          filters:
+            branches:
+              only: master
+              
+      - deploy-site11:
+          requires:
+            - approval-deploy
+          filters:
+            branches:
+              only: master
+
+      - deploy-site12:
           requires:
             - approval-deploy
           filters:
