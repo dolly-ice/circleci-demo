@@ -89,7 +89,7 @@ jobs:
       - run: echo 'deploy sit4'
 
 
- deploy-site5:
+  deploy-site5:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
@@ -104,7 +104,7 @@ jobs:
       
 
 
- deploy-site7:
+  deploy-site7:
     docker:
       - image: circleci/openjdk:8-jdk 
     steps:
